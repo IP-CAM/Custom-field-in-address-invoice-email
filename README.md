@@ -1,12 +1,8 @@
-[![license][licenca-badge]][LICENSE]
+This modification was developed 100% in the OCMOD format, and displays the custom fields:
 
-### Apresentação
+In the store administration, viewing the delivery list, invoice and request.
 
-Esta modificação foi desenvolvida 100% no formato OCMOD, e exibe os campos personalizados:
-
-- Na administração da loja, ao visualizar a lista de entrega, fatura e pedido.
-
-- Na frente de loja, na edição de endereços na conta do cliente e no e-mail de confirmação do pedido.
+In front of the store, in the editing of addresses in the client account and in the order confirmation e-mail.
 
 ### Instalação
 
