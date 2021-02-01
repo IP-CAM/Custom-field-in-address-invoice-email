@@ -4,19 +4,19 @@ In the store administration, viewing the delivery list, invoice and request.
 
 In front of the store, in the editing of addresses in the client account and in the order confirmation e-mail.
 
-### Instalação
+### Installation
 
- 1. Acesse o link: https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=23447
- 2. Localize o arquivo compatível com sua versão do OpenCart e faça o download.
- 3. Na administração da loja acesse o menu **Extensões→Instalador** (Extensions→Installer), clique no botão **Upload**, selecione o arquivo **ocmod-editor.ocmod.zip** e aguarde a conclusão da instalação automática.
- 4. Após a instalação, acesse o menu **Extensões→Modificações** (Extensions→Modifications) e clique 2x no botão **Atualizar** (Refresh), para que a modificação instalada seja adicionada na loja, lembrando que não é o botão **Atualizar** do navegador, e sim o botão **Atualizar** na cor azul ao lado do botão laranja e vermelho na tela do próprio OpenCart.
- 5. **Apenas no OpenCart 3**, vá na página principal do painel de controle da administração da loja, abaixo do botão **Sair**, você verá um botão na cor azul com o desenho de uma engrenagem branca dentro dele, clique neste botão e no popup que vai abrir, clique nos dois botões na cor laranja que estão dentro da coluna **Ação** para atualizar o cache do tema.
+ 1. Access the link: https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=23447
+ 2. Locate the file compatible with your version of OpenCart and download it.
+ 3. In the store administration, access the menu ** Extensions → Installer ** (Extensions → Installer), click the button ** Upload **, select the file ** ocmod-editor.ocmod.zip ** and wait for the completion of the automatic installation.
+ 4. After installation, access the menu ** Extensions → Modifications ** (Extensions → Modifications) and click twice on the ** Update ** button (Refresh), so that the installed modification is added in the store, remembering that it is not the ** Update ** button on the browser, but the ** Update ** button in blue next to the orange and red button on the OpenCart screen.
+ 5. ** Only in OpenCart 3 **, go to the main page of the store administration control panel, under the ** Exit ** button, you will see a blue button with the design of a white gear inside it, click on this button and in the popup that will open, click on the two orange buttons inside the ** Action ** column to update the theme cache.
 
-### Configuração
+### Configuration
 
-Após a instalação da modificação, acesse o menu **Configurações→Dados auxiliares→Países** (System→Localisation→Countries), localize o país "**Brasil**" (locate the country Brazil), clique no botão "**Editar**" (Edit), nos dados do país no campo "**Formatação do endereço**" (Address Format) adicione o código abaixo substituindo na tag {custom_field_ID} o texto **ID** pelo id do campo personalizado que pode ser localizado no menu **Clientes→Personalizar cadastro** (Customers→Custom Fields):
+After installing the modification, access the menu ** Settings → Auxiliary data → Countries ** (System → Localization → Countries), locate the country "** Brazil **" (locate the country Brazil), click the button "** Edit ** "(Edit), in the country data in the field" ** Address formatting ** "(Address Format) add the code below replacing in the {custom_field_ID} tag the text ** ID ** with the custom field id that can be found in the menu ** Customers → Customize registration ** (Customers → Custom Fields):
 
-```php
+`` php
 {firstname} {lastname}
 {company}
 {address_1}, {custom_field_ID}
@@ -24,39 +24,36 @@ Após a instalação da modificação, acesse o menu **Configurações→Dados a
 {postcode}
 {city} / {zone}
 {country}
-```
+``
 
-Sendo que você pode adicionar quantos campos personalizados você desejar, lembrando que todos devem está no formato {custom_field_ID}, e por último clique no botão **Salvar** (Save).
+Since you can add as many custom fields as you want, remembering that all must be in the format {custom_field_ID}, and lastly click on the button ** Save ** (Save).
 
-**Exibindo os campos personalizados na seleção de endereço do checkout:**
+** Displaying custom fields in the checkout address selection: **
 
-No OpenCart versão 2:
+In OpenCart version 2:
 
-[Manual](./manuais/OPENCART_2.md)
+[Manual] (./ manuals / OPENCART_2.md)
 
-No OpenCart versão 3:
+In OpenCart version 3:
 
-[Manual](./manuais/OPENCART_3.md)
+[Manual] (./ manuals / OPENCART_3.md)
 
-### Desinstalação
+### Uninstallation
 
-No OpenCart versão 2:
+In OpenCart version 2:
 
-Acesse o menu **Extensões→Modificações** (Extensions→Modifications), localize e selecione a modificação com o nome '**Campos personalizados para OpenCart**', depois clique no botão **Excluir** (Delete), e no botão **Atualizar** (Refresh).
+Access the ** Extensions → Modifications ** menu, locate and select the modification with the name '** Custom fields for OpenCart **', then click the ** Delete ** button, and ** Refresh ** button.
 
-No OpenCart versão 3:
+In OpenCart version 3:
 
-Acesse o menu **Extensões→Instalador** (Extensions→Installer), localize o arquivo **ocmod-editor.ocmod.zip** e clique no botão **Desinstalar**, depois vá no menu **Extensões→Modificações** (Extensions→Modifications), clique no botão **Atualizar** (Refresh), e por último vá na página principal do painel de controle da administração da loja, abaixo do botão **Sair**, você verá um botão na cor azul com o desenho de uma engrenagem branca dentro dele, clique neste botão e no popup que vai abrir clique nos dois botões na cor laranja que estão dentro da coluna **Ação** para atualizar o cache do tema.
+Access the menu ** Extensions → Installer ** (Extensions → Installer), locate the file ** ocmod-editor.ocmod.zip ** and click the button ** Uninstall **, then go to the menu ** Extensions → Modifications * * (Extensions → Modifications), click the ** Update ** button (Refresh), and finally go to the main page of the store administration control panel, under the ** Exit ** button, you will see a color button blue with the design of a white gear inside it, click on this button and in the popup that will open click on the two orange buttons that are inside the column ** Action ** to update the theme cache.
 
-### Atualização
+### Update
 
-Acesse a administração da loja e execute o procedimento de Desinstalação, depois execute o procedimento de Instalação.
+Access the store administration and perform the Uninstall procedure, then perform the Installation procedure.
 
-### Dúvidas
+### Doubts
 
-O OCMOD (OpenCart Modification) é nativo do OpenCart, ou seja, não é necessário instalar nenhum complemento no OpenCart para utilizar modificações ou extensões no formato OCMOD, para mais informações sobre o OCMOD, segue o link para mais informações:
+OCMOD (OpenCart Modification) is native to OpenCart, that is, it is not necessary to install any add-on in OpenCart to use modifications or extensions in the OCMOD format, for more information about OCMOD, follow the link for more information:
 
 https://github.com/opencart/opencart/wiki/Modification-System
-
-[licenca-badge]: https://img.shields.io/badge/licença-GPLv3-blue.svg
-[LICENSE]: ./LICENSE
